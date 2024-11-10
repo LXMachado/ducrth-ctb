@@ -1,64 +1,114 @@
-<div style="background: black;">
-<p align="center" style="margin: 0;">
-  <a href="https://dev.marblism.com" target="blank">
-    <img src="https://marblism-dashboard-api--production-public.s3.us-west-1.amazonaws.com/marblism-logo.png" height="150" alt="Marblism Logo" />
-  </a>
-</p>
-<h1 align="center" style="margin: 0;">In Marble We Trust</h1>
+# Job Tracking Application for Curtains and Blinds Industry
 
-<a  style="margin: 0;" target="_blank" href="https://marblism.com">
-<p align="center" style="margin: 0; letter-spacing: 3px;
-text-decoration: none;">
-marblism
-</p>
-</a>
-</div>
-<div style="height: 50px; background: linear-gradient(#000000, transparent);"></div>
+## Overview
 
-## Documentation
+The Job Tracking Application is designed specifically for the curtains and blinds industry to streamline the management of customer orders, team assignments, job scheduling, and material procurement. This system integrates all core components, including customers, teams, jobs, job sheets, scheduling, and ordering, to provide a centralized platform for enhanced visibility and efficiency. The main goal of this application is to improve job tracking, boost team productivity, and reduce overhead costs by eliminating the need for paperwork and manual processes.
 
-Learn more in the [official documentation](https://dev.marblism.com).
+## Features
+
+### 1. User Authentication and Role Management
+
+- **User Registration and Sign In**: Users can create accounts and log in to access application features.
+- **Role-based Access Control**: Supports different roles like Administrators, Team Members, Customers, and Sales Representatives. Each role has specific permissions, ensuring secure access to data and features.
+
+### 2. Home Dashboard
+
+- **Overview of Jobs**: Displays an overview of assigned jobs, upcoming schedules, and pending tasks.
+- **Performance Metrics**: Shows key performance metrics and allows for quick navigation to create new jobs or view customer details.
+
+### 3. Customer Database Management
+
+- **Manage Customer Records**: Add, view, update, and delete customer records, including name, address, phone number, email, and job history.
+- **Search and Filter**: Users can search for customers and filter results by various attributes.
+- **Job Association**: Link customers to their past, ongoing, and future jobs.
+
+### 4. Job Management
+
+- **Create, Track, and Update Jobs**: Manage job records with detailed information, including job type, assigned teams, customer details, and job sheets.
+- **Job Progress Tracking**: View and modify job progress, assign team members, and manage job details.
+
+### 5. Calendar
+
+- **Job Scheduling**: View scheduled jobs in daily, weekly, or monthly formats.
+- **Modify Schedules**: Users can schedule, reschedule, or cancel jobs as needed.
+- **Notifications**: Receive notifications for changes in job schedules.
+
+### 6. Team Management
+
+- **Manage Teams**: Create and manage different teams involved in sales, production, and installation.
+- **Assign Team Members**: Assign members to specific teams and manage team workload and roles.
+
+### 7. Material Management
+
+- **Track Materials**: Manage materials required for each job, including ordering, delivery, and backorders.
+- **Link Materials to Jobs**: Associate materials with specific jobs and customers to ensure traceability.
+
+### 8. Job Sheets Management
+
+- **Create and Manage Job Sheets**: Digitally manage job sheet details, including customer-specific measurements and order details.
+- **Link Job Sheets**: Assign job sheets to specific jobs and customers and assign them to sales representatives for easy tracking.
 
 ## Installation
 
-<div style="color: red;">
+To get started with the Job Tracking Application, follow the steps below:
 
-> ⚠️ **Important**<br/>Make sure the following tools are installed on your computer
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/username/job-tracking-app.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd job-tracking-app
+   ```
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Set Up Environment Variables**:
+   Create a `.env` file in the root directory and add the required environment variables, such as database connection strings and API keys.
 
-<p align="center">
+5. **Run the Application**:
+   ```bash
+   npm start
+   ```
 
-<a target="_blank" href="https://www.docker.com/get-started/">![Docker Desktop Version](https://img.shields.io/badge/Docker%20Desktop-4.19.0-black?logo=docker)</a>
-<a target="_blank" href="https://nodejs.org/en">![Node.js version](https://img.shields.io/badge/Node.js-20.11.0-black?logo=nodedotjs)</a>
-<a target="_blank" href="https://www.npmjs.com/">![npm Version](https://img.shields.io/badge/npm-10.2.4-black?logo=npm)</a>
+## Usage
 
-</p>
-</div>
+Once the application is up and running, users can log in and access different features based on their role. The main dashboard provides an overview of all jobs, schedules, and tasks, while specific pages allow users to manage customers, jobs, teams, materials, and job sheets.
 
-<br />
+## Folder Structure
 
-```bash
-$ pnpm run init
-```
+- **/src**: Contains the source code for the application.
+  - **/components**: Reusable UI components.
+  - **/pages**: Page components for different views (e.g., Dashboard, Customers, Jobs).
+  - **/services**: API calls and data handling logic.
+  - **/utils**: Utility functions and helper methods.
 
-## Development
+## Contributing
 
-```bash
-$ pnpm run dev
-```
+We welcome contributions to improve the Job Tracking Application. To contribute:
 
-[View your application in your browser](http://localhost:8099)
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-## Production
+## License
 
-```bash
-$ pnpm run build
-$ pnpm run start
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Support
+## Contact
 
-We reply FAST on our <a target="_blank" href="https://discord.gg/GScNz7kAEu">Discord server</a>.
+For questions or support, please contact:
 
-## Stay in touch
+- **Email**: info@alexandremachado.com.au
+- **GitHub Issues**: [GitHub Issues Page](https://github.com/LXMachado/ducrth-ctb/issues)
 
-[@marblismAI](https://twitter.com/marblismAI)
+## Future Improvements
+
+- **Mobile Application**: Develop a mobile version for Android and iOS to facilitate on-the-go job tracking.
+- **Analytics Dashboard**: Add advanced analytics features to provide insights into team performance and material usage.
+- **Integration with Third-party Tools**: Integrate with popular tools like Slack for communication and Google Calendar for scheduling.
+
+Thank you for using the Job Tracking Application for Curtains and Blinds Industry!
