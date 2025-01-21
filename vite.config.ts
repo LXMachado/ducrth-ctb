@@ -52,8 +52,7 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
-    
+
     ...(isProduction ? [remixPWA()] : []),
-    
   ],
 })
