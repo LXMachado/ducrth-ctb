@@ -21,9 +21,9 @@ export const Logo: React.FC<Props> = ({
   return (
     <Flex align="center" gap={10} onClick={() => goTo('/home')}>
       <img
-        src="https://marblism-dashboard-api--production-public.s3.us-west-1.amazonaws.com/ducrth-ctb-ekYh"
+        src="https://i.imgur.com/2dcDGIE.png"
         {...props}
-        alt="Logo"
+        alt="CTB Logo"
         height={height}
         style={{
           borderRadius: '5px',
@@ -35,7 +35,7 @@ export const Logo: React.FC<Props> = ({
         onError={event => {
           const target = event.target as HTMLImageElement
           target.onerror = null
-          target.src = 'https://i.imgur.com/2dcDGIE.png'
+          target.src = 'https://i.imgur.com/ZdJSK3Y.jpeg'
         }}
       />
       {isLabel && (
