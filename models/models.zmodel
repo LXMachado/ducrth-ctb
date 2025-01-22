@@ -190,4 +190,4 @@ model PwaSubscription {
     @@allow("all", true)
 }
 
-    
+      
