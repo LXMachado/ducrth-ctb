@@ -21,6 +21,9 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    allowedHosts: ['8099-dyiuzs-workspace.ap-south-1.marblism.com'],
+  },
   plugins: [
     remix({
       future: {
